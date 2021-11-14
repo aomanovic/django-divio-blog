@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY', '<a string of random characters>')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DJANGO_DEBUG') == "True"
+DEBUG = os.environ.get('DJANGO_DEBUG') == "False"
 
 DIVIO_DOMAIN = os.environ.get('DOMAIN', '')
 DIVIO_DOMAIN_ALIASES = [
@@ -167,4 +167,4 @@ DEFAULT_FILE_STORAGE = 'django-divio-blog.settings.DefaultStorageClass'
 
 # only required for local file storage and serving, in development
 MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join('/data/media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

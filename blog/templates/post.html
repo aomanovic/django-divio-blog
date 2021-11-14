@@ -26,14 +26,12 @@ align-content: center;
 opacity: 1.0; }
 a {text-align: center; text-decoration: none;}
 .jumbotron {
-    {% thumbnail object.thumbnail 200x200 upscale as thumb %}
-  background-image: url({{ thumb.url }});
-  background-size: cover;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding: 0;
 }
 </style>
 <header class="jumbotron" style="background-color: #BDFFD3; color: #00308F;">
+{% thumbnail object.thumbnail 1500x400 upscale crop as thumb %}
+                                    <img src="{{ thumb|data_uri }}" style="width: 100%;">
 </header>
 <div class="container">
 <div class="row">
