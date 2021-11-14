@@ -60,7 +60,7 @@ text-align: center; }
                                         {% endfor %}
                                     </div>
                                     <img src="{{ post.thumbnail.avatar.url }}" alt="" />
-                                {% thumbnail post.thumbnail 25x25 crop as thumb %}
+                                {% thumbnail post.thumbnail 500x500 crop as thumb %}
                                     <img src="{{ thumb|data_uri }}">
                                     <p class="mb-auto">
                                         {% if LANGUAGE_CODE == 'de' %}
