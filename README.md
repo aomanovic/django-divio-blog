@@ -28,3 +28,31 @@ Built-in options are available for using Postgres/MySQL, uWSGI/Gunicorn/Guvicorn
 
 Again, see [Deploy a new Django project using the Divio quickstart
 repository](https://docs.divio.com/en/latest/how-to/django-deploy-quickstart/) for more guidance on customisation.
+
+Specification
+Article model fields
+slug
+image
+tags
+content
+creation date
+
+
+Article model admin list should be filterable by tags
+
+
+Article model admin change form
+Content field is a rich text editor
+
+
+Article list view features
+Renders an article grid (title, image, cropped content) and behaves responsively on all screen resolutions
+Images are rendered as optimized thumbnails
+Filterable by tags
+
+
+Article detail view features
+Page wide thumbnail
+Title
+Creation date
+Content

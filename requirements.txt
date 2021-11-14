@@ -7,3 +7,8 @@ boto3==1.14.49
 psycopg2==2.8.5
 
 uwsgi==2.0.19.1
+django-translation-manager==1.1.1
+python-gettext==4.0
+easy-thumbnails
+django-taggit
+django-tinymce
