@@ -167,4 +167,4 @@ DEFAULT_FILE_STORAGE = 'django-divio-blog.settings.DefaultStorageClass'
 
 # only required for local file storage and serving, in development
 MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join('/data/media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
